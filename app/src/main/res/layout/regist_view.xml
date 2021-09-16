@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_margin="3dp"
+            android:id="@+id/btnCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중복체크"/>
+        <TextView
+            android:id="@+id/txtCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학번"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/registNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/registName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학년"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/registYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1~4사이의 숫자로 입력해 주세요."/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성별"
+            android:textSize="20dp"/>
+        <RadioGroup
+            android:id="@+id/registRdoGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/registMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남"/>
+            <RadioButton
+                android:id="@+id/registFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전공"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/registMajor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="점수"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/registScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1~100사이의 숫자로 입력해주세요."/>
+
+    </LinearLayout>
+
+</LinearLayout>

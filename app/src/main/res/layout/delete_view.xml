@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdoSearchName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름"/>
+            <RadioButton
+                android:id="@+id/rdoSearchMajor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전공"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:layout_weight="2"
+            android:id="@+id/edtSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="찾기"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학번 : "
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/delNum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름 : "
+            android:textSize="20dp"/>
+        <TextView
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:id="@+id/delName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학년 : "
+            android:textSize="20dp"/>
+        <TextView
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:id="@+id/delYear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성별 : "
+            android:textSize="20dp"/>
+        <TextView
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:id="@+id/delGender"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전공 : "
+            android:textSize="20dp"/>
+        <TextView
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:id="@+id/delMajor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="점수 : "
+            android:textSize="20dp"/>
+        <TextView
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:id="@+id/delScore"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:id="@+id/btnDelCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="취소"/>
+        <Button
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:id="@+id/btnDelFin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="학생삭제"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/deleteTxt"
+            android:visibility="invisible"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="검색 결과 입니다."
+            android:textSize="25dp"
+            android:background="#F8C471"
+            android:textColor="#A04000"/>
+        <TextView
+            android:id="@+id/deleteTxt2"
+            android:visibility="invisible"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="삭제를 원하는 학생을 클릭해 주세요."
+            android:textSize="15dp"/>
+
+        <ListView
+            android:id="@+id/deleteListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
